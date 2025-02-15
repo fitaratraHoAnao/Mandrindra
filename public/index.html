@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Bienvenue sur l'API Explorer</h1>
+    <div class="api-container">
+        <div class="api-card">
+            <h2>API Gemini</h2>
+            <p>Une API basée sur Google Gemini pour générer du texte et analyser des images.</p>
+            <button onclick="fetchAPI('/api/gemini')">Tester API Gemini</button>
+        </div>
+        <div class="api-card">
+            <h2>API Llama</h2>
+            <p>Une API utilisant les modèles Groq pour répondre aux questions des utilisateurs.</p>
+            <button onclick="fetchAPI('/llama?question=Bonjour&uid=test')">Tester API Llama</button>
+        </div>
+    </div>
+    <div id="response"></div>
+    <script src="script.js"></script>
+</body>
+</html>
