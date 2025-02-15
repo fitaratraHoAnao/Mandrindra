@@ -1,0 +1,34 @@
+{
+  "name": "api-explorer",
+  "version": "1.0.0",
+  "description": "Un projet Express pour interagir avec les API Gemini et Llama.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "groq-sdk": "^0.7.1",
+    "tmp-promise": "^3.0.2",
+    "@google/generative-ai": "^0.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "keywords": [
+    "Express",
+    "API",
+    "Gemini",
+    "Llama",
+    "Groq"
+  ],
+  "author": "Ton Nom",
+  "license": "MIT"
+}
